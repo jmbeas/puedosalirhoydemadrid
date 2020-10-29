@@ -1,6 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Puedo salir hoy de Madrid</title>
+
+</head>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+	* {margin: 0; padding: 0;box-sizing:border-box;}
+	body {
+        background-color: #FFF;
+        color: #000;
+        font-family:'Oswald', sans-serif;
+        font-size: 65px;
+        line-height: 1.2;
+    }
+	main {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1250px;
+        margin: 0 auto;
+        height: 100vh; 
+        text-align: center;
+    }
+	.quote {font-style: italic;}
+	.name {
+        text-align: right; 
+        font-size: 45px; 
+        margin-top: 20px;
+    }
+	@media(max-width: 1250px) {
+        body {font-size:55px;} 
+        main {
+            width: 100%; 
+            padding:100px;
+        } 
+        .name {font-size:40px;}
+    }
+	@media(max-width: 980px){
+        main {
+            width: 100%; 
+            padding:60px;
+        }
+    }
+	@media(max-width: 768px){
+        body {font-size:45px;} 
+        main {padding:40px;}
+    }
+	@media(max-width: 480px){
+        body {font-size:25px;} 
+        main {padding:20px;}
+        .name{font-size:16px;}
+    }
+</style>
 <body>
-<h1>NO, hoy no puedes salir</h1>
+	<main>
+		<p class="quote the_answer"></p>	
+		<p class="name">I.D.A</p>
+	</main>
+	
+
+	<script type="text/javascript">
+	    (function() {
+		 const sentences = [
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+		 ];
+		 const sentence = sentences[Math.floor(Math.random() * sentences.length)];
+		 const container = document.getElementsByClassName('the_answer')[0];
+		 container.innerHTML = `"${sentence}"`;
+		})();
+  	</script>
 </body>
 </html>
