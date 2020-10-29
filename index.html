@@ -17,60 +17,60 @@
         line-height: 1.2;
     }
 	main {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         justify-content: center;
         max-width: 1250px;
         margin: 0 auto;
-        height: 100vh; 
+        height: 100vh;
         text-align: center;
     }
 	.quote {font-style: italic;}
 	.name {
-        text-align: right; 
-        font-size: 45px; 
+        text-align: right;
+        font-size: 45px;
         margin-top: 20px;
     }
 	@media(max-width: 1250px) {
-        body {font-size:55px;} 
+        body {font-size:55px;}
         main {
-            width: 100%; 
+            width: 100%;
             padding:100px;
-        } 
+        }
         .name {font-size:40px;}
     }
 	@media(max-width: 980px){
         main {
-            width: 100%; 
+            width: 100%;
             padding:60px;
         }
     }
 	@media(max-width: 768px){
-        body {font-size:45px;} 
+        body {font-size:45px;}
         main {padding:40px;}
     }
 	@media(max-width: 480px){
-        body {font-size:25px;} 
+        body {font-size:25px;}
         main {padding:20px;}
         .name{font-size:16px;}
     }
 </style>
 <body>
 	<main>
-		<p class="quote the_answer"></p>	
+		<p class="quote the_answer"></p>
 		<p class="name">I.D.A</p>
 	</main>
-	
+
 
 	<script type="text/javascript">
 	    (function() {
 		 const sentences = [
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
-		 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tellus eget neque finibus fringilla. Quisque aliquam nisl sit amet enim aliquet ullamcorper. Curabitur mollis neque eget metus auctor,',
+       'A lo largo del curso es probable que prácticamente todos los niños, de una manera u otra se contagien del coronavirus.',
+  		 'Tengo claro que este virus, por eso se llama Covid-19, porque es coronavirus-diciembre-19, este virus estaba desde diciembre de 2019 campando a sus anchas por todas partes.',
+  		 'Genéticamente el Covid, por lo visto, tiene algo que nos asemeja (a españoles y latinoamericanos), en cuanto a su virulencia en el organismo, es algo curioso que genéticamente nos ha unido mucho. Estoy muy orgullosa de todo lo que hemos hecho y de saber que nos hemos equivocado muchas veces pero hemos actuado teniendo en cuenta el momento que nos ha tocado.',
+  		 'La protección individual es clave en este momento. Tu mascarilla es como tu casco o una tirita. Piensa en tu seguridad y en la de los mayores.',
+  		 'Los asintomáticos no contagian.',
+  		 'Yo creo que a un niño le den una pizza no es un problema. No creo que los niños que están en sus casas confinados, y jartos de estar ahí, tengan que aguantar los menús que le podrían poner sus señorías de Podemos, que a lo mejor son los de Venezuela, que es nada.',
 		 ];
 		 const sentence = sentences[Math.floor(Math.random() * sentences.length)];
 		 const container = document.getElementsByClassName('the_answer')[0];
